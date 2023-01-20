@@ -93,7 +93,7 @@ function Home(props) {
             </section>
             <footer className="absolute right-0 bottom-0 p-6 lg:p-32">
                 <p className="font-bold mb-1 text-white">Developer by Derifta</p>
-                <p className='text-white'>Desta Arifta (Full Stack Engineer)</p>
+                <p className='text-white'>Desta Arifta (Full Stack Developer)</p>
             </footer>
         </main>
     );
