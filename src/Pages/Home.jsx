@@ -17,7 +17,7 @@ function Home(props) {
                      from Indonesia
                 </h1>
 
-                <div className=" my-8 p-8 w-full md:block md:w-auto" id="navbar-default">
+                <div className=" my-8 w-full md:block md:w-auto" id="navbar-default">
                     <ul className="flex flex-col py-4 mt-5 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
                         <li>
                             <Link to="/" className="block lg:text-xl py-2 pl-3 pr-4 text-white  rounded md:bg-transparent md:text-white md:p-0 dark:text-white" aria-current="page">
@@ -89,12 +89,12 @@ function Home(props) {
                         </li>
                     </ul>
                 </div>
-
-            </section>
-            <footer className="absolute right-0 bottom-0 p-6 lg:p-32">
+                <footer className=" right-0 bottom-0 lg:py-8">
                 <p className="font-bold mb-1 text-white">Developer by Derifta</p>
                 <p className='text-white'>Desta Arifta (Full Stack Developer)</p>
             </footer>
+            </section>
+           
         </main>
     );
 }
