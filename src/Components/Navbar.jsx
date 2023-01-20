@@ -132,7 +132,7 @@ function Navbar() {
 
                     <a className="flex items-center">
                         <img className='mr-5' src={logo} />
-                        <h3 className="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">Desta Arifta 01</h3>
+                        <h3 className="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">Desta Arifta</h3>
                     </a>
                     <button data-collapse-toggle="navbar-multi-level" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
                         <span className="sr-only">Open main menu</span>
