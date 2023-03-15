@@ -20,19 +20,21 @@ function Home(props) {
                         <img src={foto_profile} alt='Desta Arifta' />
                     </div>
                     <div>
-                        <h1 className='text-2xl my-2 text-white text-[#18d26e]'>Full Stack Developer</h1>
+                        <h1 className='text-1xl my-2  text-[#18d26e]'>Full Stack Developer</h1>
                         <p className='text-white'>Semakin kamu berbicara tentang hal-hal negatif dalam hidup, maka kamu akan semakin memiliki pikiran negatif. Bicaralah kemenangan bukan kekalahan.</p>
                     </div>
                 </div>
+                <div className='md:hidden'>
+                    <Sosmed />
+                </div>
 
                 <div class="columns-1 md:hidden my-5">
-                    <div className="grid grid-cols-2 gap-2">
+                    <div className="grid grid-cols-1 gap-2">
                         <div className="my-2">
                             <p className='text-white '> Tempat/ tanggal lahir:<br /> Semarang, 1 Desembe 1984</p>
                         </div>
-                        <div className="my-2">
-                            <p className='text-white'>Umur:<br /> 38</p>
-                        </div>
+                    </div>
+                    <div className="grid grid-cols-2 gap-2">
                         <div className="my-2">
                             <p className='text-white'>Agama:<br /> Islam</p>
                         </div>
@@ -51,32 +53,30 @@ function Home(props) {
                         <div className="my-2">
                             <p className='text-white'>Email:<br /> desta.arifta@gmail.com</p>
                         </div>
-                        <div className="my-2">
-                            <p className='text-white'>City:<br /> Jakarta, Indonesia</p>
-                        </div>
                     </div>
                     <p className='text-white my-5'>
                         Berpengalaman lebih dari 9 tahun bekerja dalam beberapa perusahaan besar. Saya sudah memiliki pengalaman dan pemahaman yang kuat tentang kerja team, individu maupun dalam mengelola team untuk target yang diinginkan user.
                     </p>
                     <p className='text-white my-5'>
                         Pencapaian terbesar termasuk meningkatkan perusahaan lebih maju sudah terbukti dalam 8 tahun kerja dalam satu perusahaan sebagai leadership divisi IT.</p>
-                    <Sosmed />
+
                 </div>
 
-                <div className="hidden md:grid grid-cols-3 gap-2 my-8">
+                <div className="hidden md:grid grid-cols-4 gap-2 my-8">
                     <div>
                         <img className='p-8' src={foto_profile} alt='Desta Arifta' />
+                        <div>
+                            <Sosmed />
+                        </div>
+
                     </div>
-                    <div className="col-span-2 m-5">
-                        <h1 className='text-4xl my-5 text-white text-[#18d26e]'>Full Stack Developer</h1>
+                    <div className="col-span-3 m-5">
+                        <h1 className='text-4xl my-5  text-[#18d26e]'>Full Stack Developer</h1>
                         <h3 className='text-1xl text-white'>Semakin kamu berbicara tentang hal-hal negatif dalam hidup, maka kamu akan semakin memiliki pikiran negatif. Bicaralah kemenangan bukan kekalahan.</h3>
                         <hr className='my-3' />
-                        <div className="grid grid-cols-2 gap-2">
+                        <div className="grid grid-cols-3 gap-2">
                             <div className="my-2">
                                 <p className='text-white '> Tempat/ tanggal lahir:<br /> Semarang, 1 Desembe 1984</p>
-                            </div>
-                            <div className="my-2">
-                                <p className='text-white'>Umur:<br /> 38</p>
                             </div>
                             <div className="my-2">
                                 <p className='text-white'>Agama:<br /> Islam</p>
@@ -96,205 +96,216 @@ function Home(props) {
                             <div className="my-2">
                                 <p className='text-white'>Email:<br /> desta.arifta@gmail.com</p>
                             </div>
-                            <div className="my-2">
-                                <p className='text-white'>City:<br /> Jakarta, Indonesia</p>
-                            </div>
                         </div>
                         <p className='text-white my-5'>
                             Berpengalaman lebih dari 9 tahun bekerja dalam beberapa perusahaan besar. Saya sudah memiliki pengalaman dan pemahaman yang kuat tentang kerja team, individu maupun dalam mengelola team untuk target yang diinginkan user.
                         </p>
                         <p className='text-white my-5'>
-                            Pencapaian terbesar termasuk meningkatkan perusahaan lebih maju sudah terbukti dalam 8 tahun kerja dalam satu perusahaan sebagai leadership divisi IT.</p>
-                        <Sosmed />
-
+                            Pencapaian terbesar termasuk meningkatkan perusahaan lebih maju sudah terbukti dalam 8 tahun kerja dalam satu perusahaan sebagai leadership divisi IT.
+                        </p>
                     </div>
-
-
-
                 </div>
 
-                <div>
-                    <h5 className='text-sm text-bold text-white'>SKILLS Frontend</h5>
-                    <hr className="w-48 h-1 bg-gray-100 border-0 rounded md:my-2 dark:bg-yellow-700"></hr>
-                    <div className="grid grid-cols-2 gap-2 my-8">
-                        <div>
-                            <dl>
-                                <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">HTML</dt>
-                                {/* <dd className="flex items-center mb-3">
+                <div className="grid md:grid-cols-3 gap-2">
+                    <div>
+                        <h5 className=' text-bold text-2xl text-[#18d26e]'>SKILLS Frontend</h5>
+                        <hr className="w-48 h-1 bg-gray-100 border-0 rounded md:my-2 dark:bg-yellow-700"></hr>
+                        <div className="grid grid-cols-2 gap-2 my-4">
+                            <div>
+                                <dl>
+                                    <dt className="text-1xl font-medium text-gray-500 dark:text-gray-400">HTML</dt>
+                                    {/* <dd className="flex items-center mb-3">
                                     <div className="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
                                         <div className="bg-green-600 level h-2.5 rounded dark:bg-green-500 w-11/12" ></div>
                                     </div>
                                     <span className="text-sm font-medium text-gray-500 dark:text-gray-400">9.3</span>
                                 </dd> */}
-                            </dl>
-                            <dl>
-                                <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">CSS</dt>
-                                {/* <dd className="flex items-center mb-3">
+                                </dl>
+                                <dl>
+                                    <dt className="text-1xl font-medium text-gray-500 dark:text-gray-400">CSS</dt>
+                                    {/* <dd className="flex items-center mb-3">
                                     <div className="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
                                         <div className="bg-green-600 h-2.5 rounded dark:bg-green-500 w-10/12" ></div>
                                     </div>
                                     <span className="text-sm font-medium text-gray-500 dark:text-gray-400">8.7</span>
                                 </dd> */}
-                            </dl>
-                            <dl>
-                                <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">Boostrap 5</dt>
-                                {/* <dd className="flex items-center mb-3">
+                                </dl>
+                                <dl>
+                                    <dt className="text-1xl font-medium text-gray-500 dark:text-gray-400">Boostrap 5</dt>
+                                    {/* <dd className="flex items-center mb-3">
                                     <div className="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
                                         <div className="bg-green-600 h-2.5 rounded dark:bg-green-500 w-11/12"></div>
                                     </div>
                                     <span className="text-sm font-medium text-gray-500 dark:text-gray-400">8.5</span>
                                 </dd> */}
-                            </dl>
-                            <dl>
-                                <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">Tailwind</dt>
-                                {/* <dd className="flex items-center mb-3">
+                                </dl>
+                                <dl>
+                                    <dt className="text-1xl font-medium text-gray-500 dark:text-gray-400">TailwindCSS</dt>
+                                    {/* <dd className="flex items-center mb-3">
                                     <div className="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
                                         <div className="bg-green-600 h-2.5 rounded dark:bg-green-500 w-10/12"></div>
                                     </div>
                                     <span className="text-sm font-medium text-gray-500 dark:text-gray-400">7.8</span>
                                 </dd> */}
-                            </dl>
-                            <dl>
-                                <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">JavaScript</dt>
-                                {/* <dd className="flex items-center mb-3">
+                                </dl>
+
+                            </div>
+                            <div>
+                                <dl>
+                                    <dt className="text-1xl font-medium text-gray-500 dark:text-gray-400">JavaScript</dt>
+                                    {/* <dd className="flex items-center mb-3">
                                     <div className="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
                                         <div className="bg-green-600 h-2.5 rounded dark:bg-green-500 w-9/12" ></div>
                                     </div>
                                     <span className="text-sm font-medium text-gray-500 dark:text-gray-400">7.6</span>
                                 </dd> */}
-                            </dl>
-                            <dl>
-                                <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">React</dt>
-                                {/* <dd className="flex items-center mb-3">
+                                </dl>
+                                <dl>
+                                    <dt className="text-1xl font-medium text-gray-500 dark:text-gray-400">CRA React JS</dt>
+                                    {/* <dd className="flex items-center mb-3">
                                     <div className="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
                                         <div className="bg-green-600 h-2.5 rounded dark:bg-green-500 w-10/12"></div>
                                     </div>
                                     <span className="text-sm font-medium text-gray-500 dark:text-gray-400">8.1</span>
                                 </dd> */}
-                            </dl>
-                            <dl>
-                                <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">Cakra</dt>
-                                {/* <dd className="flex items-center">
+                                </dl>
+                                <dl>
+                                    <dt className="text-1xl font-medium text-gray-500 dark:text-gray-400">Cakra</dt>
+                                    {/* <dd className="flex items-center">
                                     <div className="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
                                         <div className="bg-green-600 h-2.5 rounded dark:bg-green-500 w-7/12"></div>
                                     </div>
                                     <span className="text-sm font-medium text-gray-500 dark:text-gray-400">6.8</span>
                                 </dd> */}
-                            </dl>
+                                </dl>
+                                <dl>
+                                    <dt className="text-1xl font-medium text-gray-500 dark:text-gray-400">Flowbite</dt>
+                                    {/* <dd className="flex items-center">
+                                    <div className="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
+                                        <div className="bg-green-600 h-2.5 rounded dark:bg-green-500 w-7/12"></div>
+                                    </div>
+                                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">6.8</span>
+                                </dd> */}
+                                </dl>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div>
-                    <h5 className='text-sm text-bold text-white'>SKILLS Engine</h5>
-                    <hr className="w-48 h-1 bg-gray-100 border-0 rounded md:my-2 dark:bg-yellow-700"></hr>
-                    <div className="grid grid-cols-2 gap-2 my-8">
-                        <div>
-                            <dl>
-                                <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">Wordpress</dt>
-                                {/* <dd className="flex items-center mb-3">
+                    <div>
+                        <h5 className='text-2xl text-bold text-[#18d26e]'>SKILLS Engine</h5>
+                        <hr className="w-48 h-1 bg-gray-100 border-0 rounded md:my-2 dark:bg-yellow-700"></hr>
+                        <div className="grid grid-cols-2 gap-2 my-8">
+                            <div>
+                                <dl>
+                                    <dt className="text-1xl font-medium text-gray-500 dark:text-gray-400">Wordpress</dt>
+                                    {/* <dd className="flex items-center mb-3">
                                     <div className="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
                                         <div className="bg-green-600 level h-2.5 rounded dark:bg-green-500 w-10/12" ></div>
                                     </div>
                                     <span className="text-sm font-medium text-gray-500 dark:text-gray-400">8.3</span>
                                 </dd> */}
-                            </dl>
-                            <dl>
-                                <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">Expression Engine ver.5</dt>
-                                {/* <dd className="flex items-center mb-3">
+                                </dl>
+                                <dl>
+                                    <dt className="text-1xl font-medium text-gray-500 dark:text-gray-400">Expression Engine ver 5.0</dt>
+                                    {/* <dd className="flex items-center mb-3">
                                     <div className="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
                                         <div className="bg-green-600 h-2.5 rounded dark:bg-green-500 w-11/12" ></div>
                                     </div>
                                     <span className="text-sm font-medium text-gray-500 dark:text-gray-400">9.3</span>
                                 </dd> */}
-                            </dl>
-                            <dl>
-                                <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">WIX</dt>
-                                {/* <dd className="flex items-center mb-3">
+                                </dl>
+                                <dl>
+                                    <dt className="text-1xl font-medium text-gray-500 dark:text-gray-400">WIX</dt>
+                                    {/* <dd className="flex items-center mb-3">
                                     <div className="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
                                         <div className="bg-green-600 h-2.5 rounded dark:bg-green-500 w-10/12"></div>
                                     </div>
                                     <span className="text-sm font-medium text-gray-500 dark:text-gray-400">8.5</span>
                                 </dd> */}
-                            </dl>
+                                </dl>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div>
-                    <h5 className='text-sm text-bold text-white'>SKILLS Support</h5>
-                    <hr className="w-48 h-1 bg-gray-100 border-0 rounded md:my-2 dark:bg-yellow-700"></hr>
-                    <div className="grid grid-cols-2 gap-2 my-8">
-                        <div>
-                            <dl>
-                                <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">Hardware</dt>
-                                {/* <dd className="flex items-center mb-3">
+                    <div>
+                        <h5 className='text-2xl text-bold text-[#18d26e]'>SKILLS Support</h5>
+                        <hr className="w-48 h-1 bg-gray-100 border-0 rounded md:my-2 dark:bg-yellow-700"></hr>
+                        <div className="grid grid-cols-2 gap-2 my-8">
+                            <div>
+                                <dl>
+                                    <dt className="text-1xl font-medium text-gray-500 dark:text-gray-400">Hardware</dt>
+                                    {/* <dd className="flex items-center mb-3">
                                     <div className="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
                                         <div className="bg-green-600 level h-2.5 rounded dark:bg-green-500 w-10/12" ></div>
                                     </div>
                                     <span className="text-sm font-medium text-gray-500 dark:text-gray-400">8.3</span>
                                 </dd> */}
-                            </dl>
-                            <dl>
-                                <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">Software</dt>
-                                {/* <dd className="flex items-center mb-3">
+                                </dl>
+                                <dl>
+                                    <dt className="text-1xl font-medium text-gray-500 dark:text-gray-400">Software</dt>
+                                    {/* <dd className="flex items-center mb-3">
                                     <div className="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
                                         <div className="bg-green-600 h-2.5 rounded dark:bg-green-500 w-10/12" ></div>
                                     </div>
                                     <span className="text-sm font-medium text-gray-500 dark:text-gray-400">8.7</span>
                                 </dd> */}
-                            </dl>
-                            <dl>
-                                <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">Networking</dt>
-                                {/* <dd className="flex items-center mb-3">
+                                </dl>
+                                <dl>
+                                    <dt className="text-1xl font-medium text-gray-500 dark:text-gray-400">Networking</dt>
+                                    {/* <dd className="flex items-center mb-3">
                                     <div className="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
                                         <div className="bg-green-600 h-2.5 rounded dark:bg-green-500 w-11/12"></div>
                                     </div>
                                     <span className="text-sm font-medium text-gray-500 dark:text-gray-400">8.5</span>
                                 </dd> */}
-                            </dl>
-                            <dl>
-                                <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">Installasi</dt>
-                                {/* <dd className="flex items-center mb-3">
+                                </dl>
+                                <dl>
+                                    <dt className="text-1xl font-medium text-gray-500 dark:text-gray-400">Installasion Soft Skill</dt>
+                                    {/* <dd className="flex items-center mb-3">
                                     <div className="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
                                         <div className="bg-green-600 h-2.5 rounded dark:bg-green-500 w-10/12"></div>
                                     </div>
                                     <span className="text-sm font-medium text-gray-500 dark:text-gray-400">7.8</span>
                                 </dd> */}
-                            </dl>
-                        </div>
-                        <div>
-                            <dl>
-                                <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">CCTV</dt>
-                                {/* <dd className="flex items-center mb-3">
+                                </dl>
+                            </div>
+                            <div>
+                                <dl>
+                                    <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">CCTV</dt>
+                                    {/* <dd className="flex items-center mb-3">
                                     <div className="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
                                         <div className="bg-green-600 h-2.5 rounded dark:bg-green-500 w-9/12" ></div>
                                     </div>
                                     <span className="text-sm font-medium text-gray-500 dark:text-gray-400">7.6</span>
                                 </dd> */}
-                            </dl>
-                            <dl>
-                                <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">Telepon PABX</dt>
-                                {/* <dd className="flex items-center mb-3">
+                                </dl>
+                                <dl>
+                                    <dt className="text-1xl font-medium text-gray-500 dark:text-gray-400">Telepon PABX</dt>
+                                    {/* <dd className="flex items-center mb-3">
                                     <div className="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
                                         <div className="bg-green-600 h-2.5 rounded dark:bg-green-500 w-10/12"></div>
                                     </div>
                                     <span className="text-sm font-medium text-gray-500 dark:text-gray-400">8.1</span>
                                 </dd> */}
-                            </dl>
-                            <dl>
-                                <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">Server VPS / Hosting</dt>
-                                {/* <dd className="flex items-center">
+                                </dl>
+                                <dl>
+                                    <dt className="text-1xl font-medium text-gray-500 dark:text-gray-400">Server VPS / Hosting</dt>
+                                    {/* <dd className="flex items-center">
                                     <div className="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
                                         <div className="bg-green-600 h-2.5 rounded dark:bg-green-500 w-11/12"></div>
                                     </div>
                                     <span className="text-sm font-medium text-gray-500 dark:text-gray-400">8.8</span>
                                 </dd> */}
-                            </dl>
+                                </dl>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+
+
+
+
 
             </div>
         </div>

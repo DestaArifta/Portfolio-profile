@@ -17,7 +17,7 @@ function Home(props) {
                      from Indonesia
                 </h1>
 
-                {/* <div className=" my-8 w-full md:block md:w-auto" id="navbar-default">
+                <div className=" my-8 w-full md:block md:w-auto" id="navbar-default">
                     <ul className="flex flex-col py-4 mt-5 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
                         <li>
                             <Link to="/" className="block lg:text-xl py-2 pl-3 pr-4 text-white  rounded md:bg-transparent md:text-white md:p-0 dark:text-white" aria-current="page">
@@ -50,7 +50,7 @@ function Home(props) {
                             </Link>
                         </li>
                     </ul>
-                </div> */}
+                </div>
 
                 <div>
                     <ul className="flex justify-center lg:justify-start flex-wrap gap-y-[20px] mb-[60px] lg:mb-0 lg:mt-[25px]">
